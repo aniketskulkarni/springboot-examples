@@ -1,4 +1,14 @@
 package com.learnwithaniket.springjpa.service;
 
-public interface AwsCertificateService {
+import com.learnwithaniket.springjpa.model.Students;
+
+import java.util.List;
+
+public interface StudentService {
+
+    List<Students> getAll();
+
+    Students getById(Integer studentId);
+
+    Integer save(Students student);
 }
